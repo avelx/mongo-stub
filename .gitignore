@@ -1,2 +1,16 @@
 *.class
 *.log
+/project/target/*
+/project/project/*
+
+*.xml
+*.iml
+target/*.*
+
+.idea/*.*
+.idea/libraries/*.*
+/.bsp/sbt.json
+/target/streams/compile/protocRunProtoc/_global/streams/out
+/.idea/*
+/.idea/*.*
+

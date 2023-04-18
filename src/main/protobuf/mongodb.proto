@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.mongodb.simulation";
+option java_outer_classname = "SimulationProto";
+
+message MsgHeader {
+  int32   requestID  = 1;
+  int32   responseTo = 2;
+  int32   opCode     = 3;
+}
+
+service MongoDbService {
+  rpc SayHello (MsgHeader) returns (MsgHeader) {}
+}
